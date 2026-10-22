@@ -1,23 +1,74 @@
 aid: lynas-rare-earths
+
 name: Lynas Rare Earths
-description: 'Lynas Rare Earths is a company surfaced via the API Evangelist harvest backlog (source:
-  australia-apidays-2026) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Lynas Rare Earths Limited (ASX: LYC; formerly Lynas Corporation Limited, renamed November 2020) is
+  a Perth-headquartered miner and processor of rare earths and the largest rare-earth producer outside China. It
+  mines the Mount Weld deposit in Western Australia and operates processing facilities in Kalgoorlie and at Gebeng,
+  Malaysia, producing separated rare-earth materials including NdPr and the heavy rare earths dysprosium and terbium.
+  Surfaced via the API Evangelist harvest backlog (australia-apidays-2026); no public developer API is known.'
+
 url: https://raw.githubusercontent.com/api-evangelist/lynas-rare-earths/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
-modified: '2026-10-21'
+
+modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Rare Earths
+- Mining
+- Materials
+- Critical Minerals
+- Australia
+- Malaysia
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/lynas-rare-earths-hosts.yml
+- type: DomainSecurity
+  url: security/lynas-rare-earths-domain-security.yml
 - type: Website
   url: https://lynasrareearths.com/
+
+apis: []
+
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: Every path tried on lynasrareearths.com and www.lynasrareearths.com (homepage, /about-us/, /privacy-policy/,
+    /investors-media/) answers HTTP 202 with a 169-187 byte SiteGround captcha redirect (/.well-known/sgcaptcha/),
+    including with a browser user-agent and a headless-browser render, so no page on the company's own site could
+    be read; we do not evade challenges. The former domain lynascorp.com 301-redirects to lynasrareearths.com, and
+    Yahoo Finance and The Globe and Mail list lynasrareearths.com as the company website, which confirms the Website
+    pointer. Description is drawn from those public listings.
+  evidence:
+  - url: https://lynasrareearths.com/
+    status: 202
+  - url: https://www.lynasrareearths.com/
+    status: 202
+  - url: https://lynasrareearths.com/about-us/
+    status: 202
+  - url: https://lynascorp.com/
+    status: 301
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

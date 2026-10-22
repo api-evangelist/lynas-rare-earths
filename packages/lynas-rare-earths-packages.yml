@@ -1,0 +1,14 @@
+name: Lynas Rare Earths packages
+generated: '2026-10-22'
+method: none
+note: Checked for first-party client libraries and found none. Lynas Rare Earths is a rare-earths miner and processor that publishes no developer API. npm search "lynas" returned 0 results, pypi.org/pypi/lynas/json returned 404, a GitHub repository search for "lynas rare earths" returned 0, and a web search found no official developer documentation. The only results were third-party market-data APIs (EODHD, financialreports.eu) that cover the LYC ticker and are not first-party.
+checked:
+- url: https://registry.npmjs.org/-/v1/search?text=lynas&size=5
+  status: 200
+  result: 0 packages
+- url: https://pypi.org/pypi/lynas/json
+  status: 404
+- url: https://api.github.com/search/repositories?q=lynas+rare+earths
+  status: 200
+  result: 0 repositories
+packages: []

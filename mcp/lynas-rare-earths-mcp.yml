@@ -1,0 +1,22 @@
+name: Lynas Rare Earths MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+description: >-
+  No official or community MCP server for Lynas Rare Earths was found, and there is no
+  OpenAPI contract in this repo from which to derive a candidate tool list. Lynas is a
+  rare-earths miner and processor with no known public developer API.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- check: preflight contract discovery on lynasrareearths.com and api.lynasrareearths.com
+  result: openapi, asyncapi, graphql and mcp all absent (preflight 2026-10-21)
+- check: web search for a Lynas Rare Earths MCP server or developer API
+  result: no Lynas-specific result
+- url: https://lynasrareearths.com/llms.txt
+  status: 202
+  note: SiteGround captcha redirect (/.well-known/sgcaptcha/); site is behind a bot challenge

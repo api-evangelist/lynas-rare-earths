@@ -1,0 +1,21 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/lynas-rare-earths/integrations
+- https://n8n.io/integrations/lynas-rare-earths/
+- https://composio.dev/toolkits/lynas-rare-earths
+- https://monid.ai/tools/lynas-rare-earths
+checked:
+- https://lynasrareearths.com/
+- https://zapier.com/apps/lynas/integrations
+- https://registry.npmjs.org/-/v1/search?text=lynas&size=5
+- https://composio.dev/toolkits/lynas-rare-earths
+- https://monid.ai/tools/lynas-rare-earths
+- https://n8n.io/integrations/lynas-rare-earths/
+- https://zapier.com/apps/lynas-rare-earths/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No developer API, marketplace listing or integrations page was found. The company's site (lynasrareearths.com)
+  serves only a SiteGround captcha shell, and no openapi/, asyncapi/ or mcp/ contract is held in the repo.
